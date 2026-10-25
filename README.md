@@ -18,7 +18,7 @@ Live: https://mvaneeten.github.io/vakantie2027/
 ## Bestanden
 
 - index.html: pagina-opbouw en navigatie.
-- vakantie.json: de enige gegevensbron: reisgegevens, negen stops met hotels, 22 dagen, begroting, praktische informatie, bronlinks en foto's.
+- vakantie.json: de enige gegevensbron: reisgegevens, tien stops met hotels, 22 dagen, begroting, praktische informatie, bronlinks en foto's.
 - app.js: leest vakantie.json, controleert de gegevens en bouwt alle onderdelen op.
 - styles.css: vormgeving voor desktop, mobiel en afdrukken.
 - images/0.jpg t/m 8.jpg: reservefoto's per bestemming, gebruikt als een online foto niet laadt.
