@@ -1,11 +1,169 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#12344a"><meta name="description" content="Onze gezinsrondreis door Canada en New England, van Toronto naar New York, zomer 2027."><title>Canada & Noordoost-USA 2027 | Onze droomreis</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="styles.css"></head><body><a class="skip-link" href="#dagen">Direct naar het dagprogramma</a>
-<header class="site-header"><a class="brand" href="#top">✦ <span>ONZE DROOMREIS <strong data-trip-text="year"></strong></span></a><nav><a href="#route">De route</a><a href="#dagen">Dagprogramma</a><a href="#hotels">Hotels</a><a href="#budget">Budget</a></nav><a class="nav-pill" href="#praktisch">Reisinfo ↗</a></header>
-<main id="top"><div id="dataStatus" class="section-wrap note" role="status">Reisgegevens laden…</div><section class="hero"><div class="hero-ornament">✳ &nbsp; CANADA / USA &nbsp; ✳</div><div class="hero-inner"><div class="eyebrow light"><span data-trip-text="dateRange"></span></div><h1><span data-trip-text="heroFirst"></span> <em>&</em><br><span class="hero-destination" data-trip-text="heroLast"></span></h1><p class="hero-sub"><span data-trip-text="heroDescription"></span></p><div class="hero-chips"><span data-trip-text="daySummary"></span><span data-trip-text="nightSummary"></span><span data-trip-text="stopSummary"></span><span data-trip-text="travelerSummary"></span></div><a class="button white" href="#dagen">Ontdek ons reisplan <span>↗</span></a></div><div class="hero-side"><div class="hero-stamp">THE<br>GREAT<br>ROAD<br>TRIP <small data-trip-text="year"></small></div></div><div class="hero-footer" id="routeSummary"></div></section>
-<section class="intro section-wrap"><div><span class="eyebrow">HET AVONTUUR</span><h2>Negen plekken.<br><em>Duizend herinneringen.</em></h2></div><p><span data-trip-text="intro"></span></p></section>
-<section id="route" class="route-section"><div class="section-wrap"><div class="section-heading"><div><span class="eyebrow">01 / ONZE ROUTE</span><h2>Van Toronto <em>naar New York</em></h2></div><p><span data-trip-text="routeDescription"></span></p></div><div class="route-layout"><div id="map" aria-label="Interactieve kaart van de route Toronto naar New York"><div class="map-fallback">Kaart laden… Bekijk de route ook in de lijst ernaast.</div></div><div class="route-list" id="routeList" aria-label="De negen stops"></div></div><p id="mapStatus" class="note" role="status"></p><button id="showRoute" type="button" class="filter">Toon de hele route</button><div class="map-actions"><a target="_blank" rel="noopener" id="googleMapsRoute">Bekijk de route in Google Maps ↗</a><span><span data-trip-text="distanceLabel"></span></span></div></div></section>
-<section id="dagen" class="section-wrap itinerary"><div class="section-heading"><div><span class="eyebrow">02 / VAN DAG TOT DAG</span><h2>Het volledige <em>reisdagboek</em></h2></div><p>Elke dag heeft zijn eigen plan. Inclusief rijtijd, activiteiten en precies welk hotel en welke overnachting erbij horen.</p></div><p class="trip-dates"><span data-trip-text="nightExplanation"></span></p><div class="filterbar" role="group" aria-label="Filter het dagprogramma"><button class="filter active" data-filter="all" aria-pressed="true"><span data-trip-text="allDays"></span></button><button class="filter" data-filter="canada" aria-pressed="false">Canada</button><button class="filter" data-filter="natuur" aria-pressed="false">Natuur & kust</button><button class="filter" data-filter="steden" aria-pressed="false">Steden & New York</button></div><p id="dayCount" class="note" role="status"></p><div id="dayGrid" class="day-grid"></div></section>
-<section id="hotels" class="hotels-section"><div class="section-wrap"><div class="section-heading"><div><span class="eyebrow">03 / ONZE VERBLIJVEN</span><h2>De hotels <em>op een rij</em></h2></div><p><span data-trip-text="hotelDescription"></span></p></div><div id="hotelGrid" class="hotel-grid"></div><p class="note"><span data-trip-text="hotelPriceNotice"></span></p></div></section>
-<section id="budget" class="section-wrap budget-section"><div class="section-heading"><div><span class="eyebrow">04 / REISBEGROTING</span><h2>Een groots avontuur.<br><em>Een helder budget.</em></h2></div><p><span data-trip-text="budgetDescription"></span></p></div><div class="budget-layout"><div class="budget-total"><span>ONS RICHTBUDGET</span><strong><span data-trip-text="targetBudget"></span></strong><p><span data-trip-text="perPerson"></span></p><div class="budget-ring" aria-hidden="true"><span>100%</span></div></div><div id="budgetRows" class="budget-rows"></div></div></section>
-<section id="praktisch" class="practical-section"><div class="section-wrap"><span class="eyebrow light">05 / GOED OM TE WETEN</span><h2>Voordat we <em>vertrekken</em></h2><div class="practical-grid" id="practicalGrid"></div><div class="practical-bottom"><p data-trip-text="notice"></p><a href="#top">Terug naar boven ↑</a></div></div></section>
-<aside class="section-wrap note" aria-label="Officiële informatie">Officiële informatie voor de planning: <span class="source-links" id="sourceLinks"></span></aside><footer><div class="footer-title">Op naar <em>het avontuur.</em></div><p><span data-trip-text="title"></span> · Met het hele gezin ♡</p><p class="footer-small"><span data-trip-text="photoNotice"></span></p></footer></main>
-<noscript><p class="section-wrap note">Schakel JavaScript in om het dagprogramma, de hotels en de begroting te bekijken.</p></noscript><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d1f2d">
+<meta name="description" content="Onze gezinsrondreis door Canada en Amerika, van Toronto naar New York, zomer 2027.">
+<title>Canada & Amerika 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#dagen">Direct naar het dagprogramma</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top"><span class="brand-mark">✦</span> Canada <em>&</em> Amerika <span class="brand-year" data-trip-text="year"></span></a>
+  <nav aria-label="Hoofdmenu">
+    <a href="#overzicht">Overzicht</a>
+    <a href="#dagen">Dag voor dag</a>
+    <a href="#route">Route</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#budget">Budget</a>
+    <a href="#praktisch">Reisinfo</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div id="dataStatus" class="data-status" role="status">Reisgegevens laden…</div>
+
+  <section class="hero" aria-label="Introductie">
+    <div class="hero-slides" id="heroSlides" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow light" data-trip-text="dateRange"></p>
+      <h1><span data-trip-text="heroFirst"></span> <em>&</em><br><span data-trip-text="heroLast"></span></h1>
+      <p class="hero-sub" data-trip-text="heroDescription"></p>
+      <div class="countdown" id="countdown" aria-live="polite"></div>
+      <div class="hero-actions">
+        <a class="button primary" href="#dagen">Ontdek het reisplan <span aria-hidden="true">→</span></a>
+        <a class="button ghost" href="#overzicht">Waar zijn we wanneer?</a>
+      </div>
+    </div>
+    <div class="hero-caption" id="heroCaption"></div>
+    <div class="hero-ticker" id="routeSummary"></div>
+  </section>
+
+  <section class="stats section-wrap" aria-label="De reis in cijfers">
+    <div><strong data-trip-text="dayCount"></strong><span>dagen</span></div>
+    <div><strong data-trip-text="nightCount"></strong><span>hotelnachten</span></div>
+    <div><strong data-trip-text="stopCount"></strong><span>bestemmingen</span></div>
+    <div><strong data-trip-text="distanceShort"></strong><span>kilometer</span></div>
+    <div><strong data-trip-text="travelerCount"></strong><span>reizigers</span></div>
+  </section>
+
+  <section class="intro section-wrap">
+    <div>
+      <p class="eyebrow">Het avontuur</p>
+      <h2>Negen plekken.<br><em>Duizend herinneringen.</em></h2>
+    </div>
+    <p class="lead" data-trip-text="intro"></p>
+  </section>
+
+  <section id="overzicht" class="overview">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 · Overzicht</p><h2>Waar zijn we <em>wanneer?</em></h2></div>
+        <p>Elke dag van de reis in één oogopslag. Klik op een dag voor het volledige programma.</p>
+      </div>
+      <div class="ribbon" id="ribbon" aria-label="Verblijven op volgorde"></div>
+      <div class="calendar" id="calendar"></div>
+      <p class="legend"><span class="legend-item"><span class="travel-badge">🚗</span> Reisdag met de auto</span><span class="legend-item"><span class="travel-badge">✈</span> Vliegdag</span></p>
+    </div>
+  </section>
+
+  <section id="dagen" class="days">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 · Dag voor dag</p><h2>Ons <em>reisdagboek</em></h2></div>
+        <p>Blader van dag naar dag met de knoppen, de pijltjestoetsen of door te vegen op de foto.</p>
+      </div>
+      <div class="day-strip" id="dayStrip" role="tablist" aria-label="Kies een dag"></div>
+      <div class="day-progress" aria-hidden="true"><span id="dayProgress"></span></div>
+      <article class="day-view" id="dayView" aria-live="polite"></article>
+      <div class="day-nav">
+        <button type="button" class="day-nav-btn" id="prevDay"></button>
+        <button type="button" class="day-nav-btn next" id="nextDay"></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="route" class="route">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 · De route</p><h2>Van Toronto <em>naar New York</em></h2></div>
+        <p data-trip-text="routeDescription"></p>
+      </div>
+      <div class="route-layout">
+        <div id="map" aria-label="Interactieve kaart van de route"><div class="map-fallback">Kaart laden…</div></div>
+        <div class="route-list" id="routeList" aria-label="De stops"></div>
+      </div>
+      <p id="mapStatus" class="note" role="status"></p>
+      <div class="map-actions">
+        <button id="showRoute" type="button" class="chip-button">Toon de hele route</button>
+        <a target="_blank" rel="noopener" id="googleMapsRoute">Open de route in Google Maps ↗</a>
+        <span data-trip-text="distanceLabel"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="hotels" class="hotels">
+    <div class="section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 · Overnachten</p><h2>Onze hotels <em>op een rij</em></h2></div>
+        <p data-trip-text="hotelDescription"></p>
+      </div>
+      <div class="hotel-summary" id="hotelSummary"></div>
+      <ol class="hotel-list" id="hotelList"></ol>
+      <p class="note" data-trip-text="hotelPriceNotice"></p>
+    </div>
+  </section>
+
+  <section id="budget" class="budget section-wrap">
+    <div class="section-heading">
+      <div><p class="eyebrow">05 · Begroting</p><h2>Een groots avontuur.<br><em>Een helder budget.</em></h2></div>
+      <p data-trip-text="budgetDescription"></p>
+    </div>
+    <div class="budget-layout">
+      <div class="budget-total">
+        <span>Ons richtbudget</span>
+        <strong data-trip-text="targetBudget"></strong>
+        <p data-trip-text="perPerson"></p>
+        <div class="budget-ring" aria-hidden="true"><span>100%</span></div>
+      </div>
+      <div id="budgetRows" class="budget-rows"></div>
+    </div>
+  </section>
+
+  <section id="praktisch" class="practical">
+    <div class="section-wrap">
+      <p class="eyebrow light">06 · Goed om te weten</p>
+      <h2>Voordat we <em>vertrekken</em></h2>
+      <div class="practical-grid" id="practicalGrid"></div>
+      <div class="practical-bottom">
+        <p data-trip-text="notice"></p>
+        <p>Officiële informatie: <span class="source-links" id="sourceLinks"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-title">Op naar <em>het avontuur.</em></p>
+    <p><span data-trip-text="title"></span> · Met het hele gezin ♡</p>
+    <details class="credits">
+      <summary>Fotoverantwoording</summary>
+      <p data-trip-text="photoNotice"></p>
+      <ul id="photoCredits"></ul>
+    </details>
+    <a class="to-top" href="#top">Terug naar boven ↑</a>
+  </footer>
+</main>
+
+<noscript><p class="section-wrap note">Schakel JavaScript in om het dagprogramma, de hotels en de begroting te bekijken.</p></noscript>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

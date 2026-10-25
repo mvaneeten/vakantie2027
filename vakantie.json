@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "trip": {
-    "title": "Canada & Noordoost-USA 2027",
+    "title": "Canada & Amerika 2027",
     "startDate": "2027-07-17",
     "endDate": "2027-08-07",
     "returnFlightDate": "2027-08-06",
@@ -12,7 +12,7 @@
     "status": "Voorstel; nog niet geboekt",
     "heroTitle": [
       "Canada",
-      "Noordoost-USA"
+      "Amerika"
     ],
     "heroDescription": "Van bruisende wereldsteden tot ruige kusten en groene bergen. Onze onvergetelijke gezinsrondreis.",
     "intro": "We beginnen in Toronto, bewonderen de Niagara Falls en de Thousand Islands, ontdekken Montréal en rijden via de bergen van Vermont en de kust van Maine naar Boston, Cape Cod en uiteindelijk New York. De perfecte mix van natuur, steden, avontuur en ontspanning voor ons gezin met twee jongeren van 15 en 18 jaar.",
@@ -36,7 +36,8 @@
       "nights": 2,
       "hotel": "Chelsea Hotel Toronto",
       "cost": 460,
-      "image": "images/0.jpg"
+      "photo": "toronto-sunset",
+      "fallbackImage": "images/0.jpg"
     },
     {
       "name": "Niagara Falls",
@@ -46,7 +47,8 @@
       "nights": 2,
       "hotel": "Vittoria Hotel & Suites",
       "cost": 400,
-      "image": "images/1.jpg"
+      "photo": "niagara-boat",
+      "fallbackImage": "images/1.jpg"
     },
     {
       "name": "Gananoque",
@@ -56,7 +58,8 @@
       "nights": 2,
       "hotel": "Holiday Inn Express & Suites Gananoque",
       "cost": 350,
-      "image": "images/2.jpg"
+      "photo": "gananoque",
+      "fallbackImage": "images/2.jpg"
     },
     {
       "name": "Montréal",
@@ -66,7 +69,8 @@
       "nights": 2,
       "hotel": "Le Square Phillips Hôtel & Suites",
       "cost": 480,
-      "image": "images/3.jpg"
+      "photo": "montreal-day",
+      "fallbackImage": "images/3.jpg"
     },
     {
       "name": "Stowe",
@@ -76,7 +80,8 @@
       "nights": 2,
       "hotel": "Green Mountain Inn",
       "cost": 470,
-      "image": "images/4.jpg"
+      "photo": "stowe-view",
+      "fallbackImage": "images/4.jpg"
     },
     {
       "name": "Bar Harbor",
@@ -86,7 +91,8 @@
       "nights": 2,
       "hotel": "Bar Harbor Motel",
       "cost": 560,
-      "image": "images/5.jpg"
+      "photo": "bar-harbor",
+      "fallbackImage": "images/5.jpg"
     },
     {
       "name": "Boston",
@@ -96,7 +102,8 @@
       "nights": 2,
       "hotel": "Element Boston Seaport District",
       "cost": 560,
-      "image": "images/6.jpg"
+      "photo": "boston",
+      "fallbackImage": "images/6.jpg"
     },
     {
       "name": "Chatham",
@@ -106,7 +113,8 @@
       "nights": 2,
       "hotel": "Pleasant Bay Village Resort",
       "cost": 550,
-      "image": "images/7.jpg"
+      "photo": "chatham",
+      "fallbackImage": "images/7.jpg"
     },
     {
       "name": "New York",
@@ -116,7 +124,8 @@
       "nights": 4,
       "hotel": "Residence Inn Manhattan/Times Square",
       "cost": 1320,
-      "image": "images/8.jpg"
+      "photo": "midtown",
+      "fallbackImage": "images/8.jpg"
     }
   ],
   "days": [
@@ -124,10 +133,15 @@
       "n": 1,
       "date": "2027-07-17",
       "title": "Schiphol → Toronto",
-      "region": "canada",
       "loc": "Toronto",
-      "icon": "✈",
       "travel": "Rechtstreekse vlucht circa 8 uur",
+      "transport": {
+        "mode": "vlucht",
+        "from": "Amsterdam",
+        "to": "Toronto",
+        "distance": null,
+        "duration": "circa 8 uur"
+      },
       "desc": "Vanaf Schiphol vliegen we naar Toronto. Na aankomst transfer naar het hotel, rustig acclimatiseren en als er nog energie is wandelen langs Harbourfront.",
       "todo": [
         "Vlucht Amsterdam–Toronto",
@@ -138,16 +152,16 @@
       "night": "1/2",
       "wiki": "Toronto",
       "notes": "Na de lange vlucht houden we de eerste avond bewust vrij. We eten in de buurt van het hotel en proberen op lokale tijd te gaan slapen; Harbourfront is alleen een optie als iedereen nog energie heeft.",
-      "image": "images/0.jpg"
+      "photo": "toronto-snake",
+      "fallbackImage": "images/0.jpg"
     },
     {
       "n": 2,
       "date": "2027-07-18",
       "title": "Toronto ontdekken",
-      "region": "canada",
       "loc": "Toronto",
-      "icon": "◉",
       "travel": "Stad verkennen, geen autorit",
+      "transport": null,
       "desc": "Met de ferry naar de Toronto Islands om te fietsen en de skyline te bewonderen. Daarna naar de CN Tower en eventueel het Distillery District.",
       "todo": [
         "Ferry naar Toronto Islands",
@@ -158,16 +172,22 @@
       "night": "2/2",
       "wiki": "Toronto_Islands",
       "notes": "We plannen de Islands in de ochtend en houden de middag voor de stad. Bij slecht weer kunnen we de volgorde omdraaien. De CN Tower blijft een keuze, zodat de dag niet te vol wordt.",
-      "image": "images/0.jpg"
+      "photo": "toronto-yacht",
+      "fallbackImage": "images/0.jpg"
     },
     {
       "n": 3,
       "date": "2027-07-19",
       "title": "Toronto → Niagara Falls",
-      "region": "canada",
       "loc": "Niagara Falls",
-      "icon": "🚙",
       "travel": "130–150 km · 1,5–2 uur",
+      "transport": {
+        "mode": "auto",
+        "from": "Toronto",
+        "to": "Niagara Falls",
+        "distance": "130–150 km",
+        "duration": "1,5–2 uur"
+      },
       "desc": "De huurauto ophalen en richting de watervallen rijden. Lunchstop in het sfeervolle Niagara-on-the-Lake. ’s Avonds de verlichte watervallen bekijken.",
       "todo": [
         "Huurauto ophalen",
@@ -178,16 +198,16 @@
       "night": "1/2",
       "wiki": "Niagara-on-the-Lake",
       "notes": "Na het ontbijt halen we de auto op. De omweg via Niagara-on-the-Lake en de lunch komen boven op de genoemde rijtijd. Na het inchecken wandelen we naar de promenade voor een eerste blik op de watervallen.",
-      "image": "images/1.jpg"
+      "photo": "notl",
+      "fallbackImage": "images/1.jpg"
     },
     {
       "n": 4,
       "date": "2027-07-20",
       "title": "Niagara Falls van dichtbij",
-      "region": "canada",
       "loc": "Niagara Falls",
-      "icon": "◉",
       "travel": "Lokale uitstapjes",
+      "transport": null,
       "desc": "Een spectaculaire boottocht naar de Horseshoe Falls, gevolgd door Journey Behind the Falls. Daarna tijd voor Clifton Hill en de promenade.",
       "todo": [
         "Niagara City Cruises",
@@ -198,16 +218,22 @@
       "night": "2/2",
       "wiki": "Niagara_Falls",
       "notes": "We verdelen de twee grote activiteiten over ochtend en middag en nemen tussendoor een ruime lunchpauze. Boekingen en openingstijden stemmen we later af op zomer 2027; de avond blijft vrij voor een tweede wandeling.",
-      "image": "images/1.jpg"
+      "photo": "niagara-mist",
+      "fallbackImage": "images/1.jpg"
     },
     {
       "n": 5,
       "date": "2027-07-21",
       "title": "Niagara → Thousand Islands",
-      "region": "canada",
       "loc": "Gananoque",
-      "icon": "🚙",
       "travel": "Circa 390 km · 4–4,5 uur",
+      "transport": {
+        "mode": "auto",
+        "from": "Niagara Falls",
+        "to": "Gananoque",
+        "distance": "circa 390 km",
+        "duration": "4–4,5 uur"
+      },
       "desc": "We rijden langs Lake Ontario naar Gananoque. Onderweg kunnen we stoppen in Kingston. De avond is voor ontspanning aan het water.",
       "todo": [
         "Stop in Kingston",
@@ -218,16 +244,16 @@
       "night": "1/2",
       "wiki": "Gananoque",
       "notes": "We vertrekken na het ontbijt en plannen onderweg meerdere pauzes. Kingston is een optionele stop: bij druk verkeer rijden we liever door, zodat er in Gananoque nog tijd is om rustig in te checken en te eten.",
-      "image": "images/2.jpg"
+      "photo": "gananoque",
+      "fallbackImage": "images/2.jpg"
     },
     {
       "n": 6,
       "date": "2027-07-22",
       "title": "Thousand Islands",
-      "region": "canada",
       "loc": "Gananoque",
-      "icon": "◉",
       "travel": "Geen lange autorit",
+      "transport": null,
       "desc": "Rondvaart tussen de talloze eilandjes in de Saint Lawrence River. In de middag optioneel kajakken of zwemmen.",
       "todo": [
         "Boottocht tussen de eilanden",
@@ -238,16 +264,22 @@
       "night": "2/2",
       "wiki": "Thousand_Islands",
       "notes": "De rondvaart is het hoofdpunt van de dag. We kiezen later een vertrek en route die bij het gezin passen. De middag houden we flexibel voor wateractiviteiten of rust; we plannen geen tweede grote excursie.",
-      "image": "images/2.jpg"
+      "photo": "boldt",
+      "fallbackImage": "images/2.jpg"
     },
     {
       "n": 7,
       "date": "2027-07-23",
       "title": "Gananoque → Montréal",
-      "region": "canada",
       "loc": "Montréal",
-      "icon": "🚙",
       "travel": "Circa 260 km · 2,5–3 uur",
+      "transport": {
+        "mode": "auto",
+        "from": "Gananoque",
+        "to": "Montréal",
+        "distance": "circa 260 km",
+        "duration": "2,5–3 uur"
+      },
       "desc": "Na een korte rit bereiken we Montréal. We verkennen Vieux-Montréal, de oude haven en de gezellige restaurants.",
       "todo": [
         "Aankomst en inchecken",
@@ -258,16 +290,16 @@
       "night": "1/2",
       "wiki": "Old_Montreal",
       "notes": "We reizen in de ochtend en rekenen extra tijd voor verkeer en parkeren in Montréal. Na het inchecken verkennen we de oude stad te voet; de auto kan tijdens het stadsverblijf blijven staan.",
-      "image": "images/3.jpg"
+      "photo": "old-montreal",
+      "fallbackImage": "images/3.jpg"
     },
     {
       "n": 8,
       "date": "2027-07-24",
       "title": "Montréal ontdekken",
-      "region": "canada",
       "loc": "Montréal",
-      "icon": "◉",
       "travel": "Stadsdag",
+      "transport": null,
       "desc": "Uitzicht vanaf Mont Royal, fietsen langs het Lachine Canal en tijd om te winkelen of de oude haven te bezoeken.",
       "todo": [
         "Mont Royal",
@@ -278,16 +310,22 @@
       "night": "2/2",
       "wiki": "Montreal",
       "notes": "We beginnen met Mont Royal en kiezen daarna tussen fietsen langs het kanaal en extra tijd in de oude haven. We houden een deel van de middag vrij voor eigen interesses en zoeken samen een plek voor het avondeten.",
-      "image": "images/3.jpg"
+      "photo": "montreal-night",
+      "fallbackImage": "images/3.jpg"
     },
     {
       "n": 9,
       "date": "2027-07-25",
       "title": "Montréal → Stowe",
-      "region": "natuur",
       "loc": "Stowe",
-      "icon": "🚙",
       "travel": "Circa 215 km · 3–4 uur incl. grensbuffer",
+      "transport": {
+        "mode": "auto",
+        "from": "Montréal",
+        "to": "Stowe",
+        "distance": "circa 215 km",
+        "duration": "3–4 uur incl. grens"
+      },
       "desc": "We steken de grens met de VS over en rijden naar de groene bergen van Vermont. Rustige middag in het dorp en bij het zwembad.",
       "todo": [
         "Grensovergang naar de VS",
@@ -298,16 +336,16 @@
       "night": "1/2",
       "wiki": "Stowe,_Vermont",
       "notes": "Paspoorten en de voor deze reis benodigde documenten houden we onderweg bij de hand. De wachttijd aan de grens is onzeker. Daarom plannen we na aankomst alleen een korte dorpswandeling en een ontspannen avond.",
-      "image": "images/4.jpg"
+      "photo": "stowe-church",
+      "fallbackImage": "images/4.jpg"
     },
     {
       "n": 10,
       "date": "2027-07-26",
       "title": "De Green Mountains",
-      "region": "natuur",
       "loc": "Stowe",
-      "icon": "◉",
       "travel": "Lokale bergwegen",
+      "transport": null,
       "desc": "Met de gondel omhoog bij Mount Mansfield, wandelen bij Smugglers’ Notch en eventueel fietsen of mountainbiken.",
       "todo": [
         "Gondel Mount Mansfield",
@@ -318,16 +356,22 @@
       "night": "2/2",
       "wiki": "Mount_Mansfield",
       "notes": "We kiezen op basis van het weer één hoofdactiviteit in de bergen. Een gondelrit en een korte wandeling zijn een rustigere combinatie; mountainbiken is een alternatief. De middag biedt ruimte voor rust bij het hotel.",
-      "image": "images/4.jpg"
+      "photo": "mansfield",
+      "fallbackImage": "images/4.jpg"
     },
     {
       "n": 11,
       "date": "2027-07-27",
       "title": "Stowe → Bar Harbor",
-      "region": "natuur",
       "loc": "Bar Harbor",
-      "icon": "🚙",
       "travel": "Circa 500 km · 6–7 uur",
+      "transport": {
+        "mode": "auto",
+        "from": "Stowe",
+        "to": "Bar Harbor",
+        "distance": "circa 500 km",
+        "duration": "6–7 uur"
+      },
       "desc": "Een echte reisdag door New England. We nemen tijd voor lunchpauzes en komen aan het einde van de middag aan bij de kust van Maine.",
       "todo": [
         "Vroeg vertrekken",
@@ -338,16 +382,16 @@
       "night": "1/2",
       "wiki": "Bar_Harbor,_Maine",
       "notes": "Vandaag krijgt de autorit voorrang. Met lunch, tanken en andere pauzes kan deze reisdag flink langer duren dan de zuivere rijtijd. We vermijden vaste avondafspraken en gaan na aankomst alleen nog eten.",
-      "image": "images/5.jpg"
+      "photo": "otter-cliff",
+      "fallbackImage": "images/5.jpg"
     },
     {
       "n": 12,
       "date": "2027-07-28",
       "title": "Acadia National Park",
-      "region": "natuur",
       "loc": "Bar Harbor",
-      "icon": "◉",
       "travel": "Park Loop Road en korte ritten",
+      "transport": null,
       "desc": "Een volle dag natuur: Jordan Pond, Sand Beach, Thunder Hole en - met eventuele reservering - het uitzicht vanaf Cadillac Mountain.",
       "todo": [
         "Jordan Pond",
@@ -358,16 +402,22 @@
       "night": "2/2",
       "wiki": "Acadia_National_Park",
       "notes": "We trekken vroeg het park in en combineren enkele korte wandelingen met uitzichtpunten. Cadillac Mountain is optioneel en afhankelijk van weer en de dan geldende reserveringsregels. Het parkprogramma mag ook korter als we meer tijd bij Jordan Pond willen.",
-      "image": "images/5.jpg"
+      "photo": "jordan-pond",
+      "fallbackImage": "images/5.jpg"
     },
     {
       "n": 13,
       "date": "2027-07-29",
       "title": "Bar Harbor → Boston",
-      "region": "steden",
       "loc": "Boston",
-      "icon": "🚙",
       "travel": "Circa 460 km · 5–6 uur",
+      "transport": {
+        "mode": "auto",
+        "from": "Bar Harbor",
+        "to": "Boston",
+        "distance": "circa 460 km",
+        "duration": "5–6 uur"
+      },
       "desc": "Via de kust van Maine naar Boston. We stoppen in de Old Port van Portland voor een lunch en lopen ’s avonds langs de haven van Boston.",
       "todo": [
         "Lunchstop Portland",
@@ -378,16 +428,16 @@
       "night": "1/2",
       "wiki": "Portland,_Maine",
       "notes": "We vertrekken op tijd en gebruiken Portland als langere pauze als het verkeer meezit. De avondwandeling in Boston is optioneel; na de rit hoeven we verder alleen in te checken en te eten.",
-      "image": "images/6.jpg"
+      "photo": "portland-head",
+      "fallbackImage": "images/6.jpg"
     },
     {
       "n": 14,
       "date": "2027-07-30",
       "title": "Boston beleven",
-      "region": "steden",
       "loc": "Boston",
-      "icon": "◉",
       "travel": "Stadsdag",
+      "transport": null,
       "desc": "De Freedom Trail, Quincy Market en Boston Common. Optioneel een honkbalwedstrijd van de Red Sox als het speelschema past.",
       "todo": [
         "Freedom Trail",
@@ -398,16 +448,22 @@
       "night": "2/2",
       "wiki": "Boston",
       "notes": "We lopen de Freedom Trail in een rustig tempo, met stops voor lunch en drinken. Voor een eventuele wedstrijd of andere avondactiviteit wachten we eerst het programma voor 2027 af. Zonder wedstrijd blijft er meer tijd voor de haven.",
-      "image": "images/6.jpg"
+      "photo": "quincy",
+      "fallbackImage": "images/6.jpg"
     },
     {
       "n": 15,
       "date": "2027-07-31",
       "title": "Boston → Cape Cod",
-      "region": "natuur",
       "loc": "Chatham",
-      "icon": "🚙",
       "travel": "Circa 150 km · 2–3 uur (of langer)",
+      "transport": {
+        "mode": "auto",
+        "from": "Boston",
+        "to": "Chatham",
+        "distance": "circa 150 km",
+        "duration": "2–3 uur (of langer)"
+      },
       "desc": "Op naar de kust en stranden van Cape Cod. We checken in bij Chatham en nemen de rest van de dag vrij voor strand of zwembad.",
       "todo": [
         "Rit naar Chatham",
@@ -418,16 +474,16 @@
       "night": "1/2",
       "wiki": "Chatham,_Massachusetts",
       "notes": "Deze zaterdag kan de rit naar Cape Cod door vakantiedrukte langer worden. We vertrekken daarom vroeg en plannen geen activiteit met een vaste starttijd. Na aankomst is strand of zwembad voldoende.",
-      "image": "images/7.jpg"
+      "photo": "cape-cod-dunes",
+      "fallbackImage": "images/7.jpg"
     },
     {
       "n": 16,
       "date": "2027-08-01",
       "title": "Ontspannen op Cape Cod",
-      "region": "natuur",
       "loc": "Chatham",
-      "icon": "◉",
       "travel": "Lokale uitstapjes",
+      "transport": null,
       "desc": "Fietsen op de Cape Cod Rail Trail, lunchen in Chatham en relaxen aan het strand. Een walvistocht is een alternatief met extra reistijd.",
       "todo": [
         "Cape Cod Rail Trail",
@@ -438,16 +494,22 @@
       "night": "2/2",
       "wiki": "Cape_Cod",
       "notes": "We kiezen voor een ontspannen fiets- en stranddag. Een walvistocht vervangt een deel van dit programma en komt er niet bovenop: die vraagt extra reistijd en is afhankelijk van beschikbaarheid en weer.",
-      "image": "images/7.jpg"
+      "photo": "white-crest",
+      "fallbackImage": "images/7.jpg"
     },
     {
       "n": 17,
       "date": "2027-08-02",
       "title": "Cape Cod → New York",
-      "region": "steden",
       "loc": "New York",
-      "icon": "🚙",
       "travel": "420–450 km · 5–6,5 uur",
+      "transport": {
+        "mode": "auto",
+        "from": "Chatham",
+        "to": "New York",
+        "distance": "420–450 km",
+        "duration": "5–6,5 uur"
+      },
       "desc": "We rijden naar New York en leveren de huurauto in. Na het inchecken beleven we Times Square bij avondlicht.",
       "todo": [
         "Vroeg vertrekken",
@@ -458,16 +520,16 @@
       "night": "1/4",
       "wiki": "Times_Square",
       "notes": "De rit naar New York kan door verkeer en het inleveren van de auto extra tijd kosten. We regelen vooraf waar de auto teruggaat en hoe we vanaf daar bij het hotel komen. Times Square bekijken we alleen als daar na aankomst nog energie voor is.",
-      "image": "images/8.jpg"
+      "photo": "times-square",
+      "fallbackImage": "images/8.jpg"
     },
     {
       "n": 18,
       "date": "2027-08-03",
       "title": "Vrijheidsbeeld & Downtown",
-      "region": "steden",
       "loc": "New York",
-      "icon": "◉",
       "travel": "Metro en ferry",
+      "transport": null,
       "desc": "Met de ferry naar Liberty Island en Ellis Island. Daarna Wall Street, het 9/11 Memorial en het Financial District.",
       "todo": [
         "Vrijheidsbeeld en Ellis Island",
@@ -478,16 +540,16 @@
       "night": "2/4",
       "wiki": "Statue_of_Liberty",
       "notes": "We reserveren de ochtend voor de ferry-excursie en houden de middag voor Downtown. Het 9/11 Memorial is een buitenbezoek in dit voorstel; een museumbezoek is een aparte keuze waarvoor we extra tijd moeten vrijmaken.",
-      "image": "images/8.jpg"
+      "photo": "liberty",
+      "fallbackImage": "images/8.jpg"
     },
     {
       "n": 19,
       "date": "2027-08-04",
       "title": "Central Park & skyline",
-      "region": "steden",
       "loc": "New York",
-      "icon": "◉",
       "travel": "Metro en wandelen",
+      "transport": null,
       "desc": "Fietsen in Central Park, shoppen op Fifth Avenue en aan het einde van de dag genieten van het uitzicht vanaf Top of the Rock.",
       "todo": [
         "Fietsen Central Park",
@@ -498,16 +560,16 @@
       "night": "3/4",
       "wiki": "Central_Park",
       "notes": "We plannen Central Park in de ochtend en een ruime lunchpauze. Fifth Avenue is flexibel in te vullen. Voor een uitzichtpunt kiezen we later een tijdslot; bij slecht zicht kunnen we dat onderdeel zo mogelijk verschuiven.",
-      "image": "images/8.jpg"
+      "photo": "bow-bridge",
+      "fallbackImage": "images/8.jpg"
     },
     {
       "n": 20,
       "date": "2027-08-05",
       "title": "Brooklyn & de High Line",
-      "region": "steden",
       "loc": "New York",
-      "icon": "◉",
       "travel": "Metro en wandelen",
+      "transport": null,
       "desc": "Wandelen over de Brooklyn Bridge, DUMBO ontdekken, Chelsea Market en de High Line. Optioneel een Broadway-musical als afsluiter.",
       "todo": [
         "Brooklyn Bridge en DUMBO",
@@ -518,16 +580,22 @@
       "night": "4/4",
       "wiki": "Brooklyn_Bridge",
       "notes": "We beginnen in Brooklyn en reizen daarna naar Chelsea voor de markt en de High Line. Een musical is een optionele afsluiter. We houden ook tijd over om bagage klaar te maken voor de terugreis.",
-      "image": "images/8.jpg"
+      "photo": "brooklyn",
+      "fallbackImage": "images/8.jpg"
     },
     {
       "n": 21,
       "date": "2027-08-06",
       "title": "New York → Schiphol",
-      "region": "steden",
       "loc": "New York",
-      "icon": "✈",
       "travel": "Nachtvlucht naar Nederland",
+      "transport": {
+        "mode": "vlucht",
+        "from": "New York",
+        "to": "Amsterdam",
+        "distance": null,
+        "duration": "nachtvlucht, circa 7 uur"
+      },
       "desc": "Afhankelijk van de vertrektijd nog een laatste ontbijt of wandeling. Daarna naar JFK of Newark voor de vlucht naar huis.",
       "todo": [
         "Uitchecken",
@@ -538,16 +606,16 @@
       "night": null,
       "wiki": "John_F._Kennedy_International_Airport",
       "notes": "Na het uitchecken hangt de resterende tijd af van de geboekte vlucht en de mogelijkheid om bagage te bewaren. We plannen een ruime luchthaventransfer en volgen de incheckadviezen van de luchtvaartmaatschappij. Deze nacht slapen we in het vliegtuig.",
-      "image": "images/8.jpg"
+      "photo": "lower-manhattan",
+      "fallbackImage": "images/8.jpg"
     },
     {
       "n": 22,
       "date": "2027-08-07",
       "title": "Aankomst in Nederland",
-      "region": "steden",
       "loc": "Schiphol",
-      "icon": "✈",
       "travel": "Aankomst na nachtvlucht",
+      "transport": null,
       "desc": "We landen op Schiphol. Een onvergetelijke rondreis zit erop!",
       "todo": [
         "Aankomst Schiphol",
@@ -558,7 +626,8 @@
       "night": null,
       "wiki": "Amsterdam_Airport_Schiphol",
       "notes": "De aankomsttijd volgt uit de nog te boeken terugvlucht. We houden de rest van de dag vrij voor de reis naar huis en herstel van de nachtvlucht. De 20 hotelovernachtingen zijn hiermee volledig afgerond.",
-      "image": "images/8.jpg"
+      "photo": "schiphol",
+      "fallbackImage": "images/8.jpg"
     }
   ],
   "budget": [
@@ -624,5 +693,217 @@
       "title": "Acadia: Cadillac Summit Road",
       "url": "https://www.nps.gov/acad/planyourvisit/vehicle_reservations.htm"
     }
-  ]
+  ],
+  "photos": {
+    "toronto-sunset": {
+      "path": "3/3c/Sunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg",
+      "caption": "Toronto bij zonsondergang, gezien vanaf de Toronto Islands",
+      "credit": "Jchmrt",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Sunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg"
+    },
+    "toronto-snake": {
+      "path": "8/8b/Toronto_Skyline_from_Snake_Island%2C_September_11_2026_%2801%29.jpg",
+      "caption": "De skyline van Toronto aan Lake Ontario",
+      "credit": "Dillan Payne",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Toronto_Skyline_from_Snake_Island,_September_11_2026_(01).jpg"
+    },
+    "toronto-yacht": {
+      "path": "2/2a/Toronto_Islands_Yacht_Club_and_Skyline.jpg",
+      "caption": "Toronto Islands met de skyline op de achtergrond",
+      "credit": "Jchmrt",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Toronto_Islands_Yacht_Club_and_Skyline.jpg"
+    },
+    "notl": {
+      "path": "3/36/Niagara_on_the_lake.jpg",
+      "caption": "Het historische centrum van Niagara-on-the-Lake",
+      "credit": "Paste (Engelstalige Wikipedia)",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Niagara_on_the_lake.jpg"
+    },
+    "niagara-boat": {
+      "path": "1/1c/Niagara_Falls_in_Ontario_with_Maid_of_the_Mist_boat_01.jpg",
+      "caption": "De Horseshoe Falls met een rondvaartboot",
+      "credit": "K2HWY",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Niagara_Falls_in_Ontario_with_Maid_of_the_Mist_boat_01.jpg"
+    },
+    "niagara-mist": {
+      "path": "e/e6/Maid_of_the_Mist_VII_approaching_the_Horseshoe_Falls%2C_West_view_20170418_1.jpg",
+      "caption": "Met de boot tot vlak bij de Horseshoe Falls",
+      "credit": "DXR",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Maid_of_the_Mist_VII_approaching_the_Horseshoe_Falls,_West_view_20170418_1.jpg"
+    },
+    "gananoque": {
+      "path": "7/78/Gananoque_Pier.jpg",
+      "caption": "De pier van Gananoque aan de Saint Lawrence",
+      "credit": "Mykola Swarnyk",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Gananoque_Pier.jpg"
+    },
+    "boldt": {
+      "path": "1/15/Ch%C3%A2teau_de_Boldt.jpg",
+      "caption": "Boldt Castle op Heart Island, Thousand Islands",
+      "credit": "Clément Bardot",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Boldt.jpg"
+    },
+    "montreal-day": {
+      "path": "2/2c/Montreal_-_QC_-_Skyline.jpg",
+      "caption": "Het centrum van Montréal vanaf Mont Royal",
+      "credit": "Taxiarchos228",
+      "license": "CC BY 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Montreal_-_QC_-_Skyline.jpg"
+    },
+    "montreal-night": {
+      "path": "7/7e/Vista_de_Montreal_desde_el_Monte_Royal%2C_Canad%C3%A1%2C_2017-08-12%2C_DD_126-137_HDR_PAN.jpg",
+      "caption": "Montréal bij avond, gezien vanaf Mont Royal",
+      "credit": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Vista_de_Montreal_desde_el_Monte_Royal,_Canad%C3%A1,_2017-08-12,_DD_126-137_HDR_PAN.jpg"
+    },
+    "old-montreal": {
+      "path": "c/ca/Place_Jacques-Cartier%2C_Vieux-Montr%C3%A9al%2C_Montreal%2C_Quebec_%2829440151264%29.jpg",
+      "caption": "Place Jacques-Cartier in Vieux-Montréal",
+      "credit": "Ken Lund from Reno, Nevada, USA",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Place_Jacques-Cartier,_Vieux-Montr%C3%A9al,_Montreal,_Quebec_(29440151264).jpg"
+    },
+    "stowe-view": {
+      "path": "a/a0/View_from_the_top_of_Stowe_mountain_in_Vermont%2C_USA.jpg",
+      "caption": "Uitzicht over de Green Mountains bij Stowe",
+      "credit": "Phil8684",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:View_from_the_top_of_Stowe_mountain_in_Vermont,_USA.jpg"
+    },
+    "stowe-church": {
+      "path": "5/53/Stowe_VT_Community_Church_%2851626887231%29.jpg",
+      "caption": "Stowe Community Church in Vermont",
+      "credit": "Shiva Shenoy from Flower Mound, United States",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Stowe_VT_Community_Church_(51626887231).jpg"
+    },
+    "mansfield": {
+      "path": "8/8b/South_from_Mount_Mansfield.jpg",
+      "caption": "Uitzicht vanaf Mount Mansfield",
+      "credit": "Mike9827",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:South_from_Mount_Mansfield.jpg"
+    },
+    "bar-harbor": {
+      "path": "1/16/Bar_Harbor%2C_ME.jpg",
+      "caption": "Bar Harbor en Frenchman Bay vanuit de lucht",
+      "credit": "Quintin Soloviev",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Bar_Harbor,_ME.jpg"
+    },
+    "otter-cliff": {
+      "path": "0/05/Acadia_National_Park%2C_Otter_Cliff.jpg",
+      "caption": "Otter Cliff in Acadia National Park",
+      "credit": "National Park Service / Matthew Lambert",
+      "license": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Acadia_National_Park,_Otter_Cliff.jpg"
+    },
+    "jordan-pond": {
+      "path": "c/c2/Jordan_Pond_Reflections_%2819247942291%29.jpg",
+      "caption": "Jordan Pond in Acadia National Park",
+      "credit": "Eric Kilby from Somerville, MA, USA",
+      "license": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Jordan_Pond_Reflections_(19247942291).jpg"
+    },
+    "portland-head": {
+      "path": "4/41/Portland_Head_Light_-_Cape_Elizabeth_-_Maine_-_USA.jpg",
+      "caption": "Portland Head Light aan de kust van Maine",
+      "credit": "Chuck Homler d/b/a Focus On Wildlife",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Portland_Head_Light_-_Cape_Elizabeth_-_Maine_-_USA.jpg"
+    },
+    "boston": {
+      "path": "8/86/Boston_skyline_from_East_Boston_November_2016_panorama_1.jpg",
+      "caption": "De skyline van Boston aan de haven",
+      "credit": "King of Hearts",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Boston_skyline_from_East_Boston_November_2016_panorama_1.jpg"
+    },
+    "quincy": {
+      "path": "8/8b/Quincy_Market_%286226181026%29.jpg",
+      "caption": "Quincy Market in Boston",
+      "credit": "Tony Hisgett from Birmingham, UK",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Quincy_Market_(6226181026).jpg"
+    },
+    "chatham": {
+      "path": "6/6a/Chatham_Light_MA.jpg",
+      "caption": "Chatham Light op Cape Cod",
+      "credit": "Ted Kerwin",
+      "license": "CC BY 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Chatham_Light_MA.jpg"
+    },
+    "cape-cod-dunes": {
+      "path": "4/49/USA_Cape_Cod_1_MA.jpg",
+      "caption": "Duinen en strand op Cape Cod",
+      "credit": "Daniel Schwen",
+      "license": "CC BY-SA 2.5",
+      "page": "https://commons.wikimedia.org/wiki/File:USA_Cape_Cod_1_MA.jpg"
+    },
+    "white-crest": {
+      "path": "9/96/White_Crest_Beach_Wellfleet.jpg",
+      "caption": "White Crest Beach bij Wellfleet, Cape Cod",
+      "credit": "Matt H. Wade",
+      "license": "CC BY-SA 3.0",
+      "page": "https://commons.wikimedia.org/wiki/File:White_Crest_Beach_Wellfleet.jpg"
+    },
+    "midtown": {
+      "path": "0/05/Midtown_Manhattan_from_Weehawken_September_2021_panorama_2.jpg",
+      "caption": "Midtown Manhattan vanaf de Hudson",
+      "credit": "King of Hearts",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Midtown_Manhattan_from_Weehawken_September_2021_panorama_2.jpg"
+    },
+    "times-square": {
+      "path": "3/39/Times_Square%2C_NYC_at_night_-_August_2025.jpg",
+      "caption": "Times Square bij avond",
+      "credit": "Nielsoncaetanosalmeron",
+      "license": "CC BY 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Times_Square,_NYC_at_night_-_August_2025.jpg"
+    },
+    "liberty": {
+      "path": "9/93/Statue_of_Liberty_and_a_sightseeing_boat%2C_Liberty_Island%2C_New_York.jpg",
+      "caption": "Het Vrijheidsbeeld op Liberty Island",
+      "credit": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_and_a_sightseeing_boat,_Liberty_Island,_New_York.jpg"
+    },
+    "bow-bridge": {
+      "path": "1/14/Bow_Bridge_with_the_Central_Park_South_skyline%2C_Central_Park%2C_Manhattan%2C_New_York.jpg",
+      "caption": "Bow Bridge in Central Park",
+      "credit": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Bow_Bridge_with_the_Central_Park_South_skyline,_Central_Park,_Manhattan,_New_York.jpg"
+    },
+    "brooklyn": {
+      "path": "f/f0/Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach%2C_New_York.jpg",
+      "caption": "Brooklyn Bridge en Lower Manhattan",
+      "credit": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach,_New_York.jpg"
+    },
+    "lower-manhattan": {
+      "path": "6/67/2024-11-17-Lower_Manhattan-0593.jpg",
+      "caption": "Lower Manhattan bij schemering",
+      "credit": "Superbass",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:2024-11-17-Lower_Manhattan-0593.jpg"
+    },
+    "schiphol": {
+      "path": "a/a8/At_Amsterdam_Airport_Schiphol_2024_01.jpg",
+      "caption": "Thuiskomst op Schiphol",
+      "credit": "Mike Peel",
+      "license": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:At_Amsterdam_Airport_Schiphol_2024_01.jpg"
+    }
+  }
 }
