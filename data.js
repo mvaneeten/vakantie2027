@@ -34,3 +34,29 @@ const days=[
 {n:22,date:'Za 7 augustus',title:'Aankomst in Nederland',region:'steden',loc:'Schiphol',icon:'✈',travel:'Aankomst na nachtvlucht',desc:'We landen op Schiphol. Een onvergetelijke rondreis zit erop!',todo:['Aankomst Schiphol','Naar huis','Foto’s terugkijken'],stop:null,night:null,wiki:'Amsterdam_Airport_Schiphol'}
 ];
 const budget=[['Hotels (20 nachten)',5150,'#1d7e9c'],['Vluchten (4 personen)',3300,'#d7a052'],['Huurauto, brandstof, tol en parkeren',1750,'#78a993'],['Activiteiten en entreegelden',1650,'#ad87b5'],['Eten en drinken',2650,'#dd806c'],['Documenten, transfers en reserve',500,'#8792a1']];
+
+// Aanvullende invulling; tijden en reserveringen volgen na boeking.
+const dayNotes = [
+  "Na de lange vlucht houden we de eerste avond bewust vrij. We eten in de buurt van het hotel en proberen op lokale tijd te gaan slapen; Harbourfront is alleen een optie als iedereen nog energie heeft.",
+  "We plannen de Islands in de ochtend en houden de middag voor de stad. Bij slecht weer kunnen we de volgorde omdraaien. De CN Tower blijft een keuze, zodat de dag niet te vol wordt.",
+  "Na het ontbijt halen we de auto op. De omweg via Niagara-on-the-Lake en de lunch komen boven op de genoemde rijtijd. Na het inchecken wandelen we naar de promenade voor een eerste blik op de watervallen.",
+  "We verdelen de twee grote activiteiten over ochtend en middag en nemen tussendoor een ruime lunchpauze. Boekingen en openingstijden stemmen we later af op zomer 2027; de avond blijft vrij voor een tweede wandeling.",
+  "We vertrekken na het ontbijt en plannen onderweg meerdere pauzes. Kingston is een optionele stop: bij druk verkeer rijden we liever door, zodat er in Gananoque nog tijd is om rustig in te checken en te eten.",
+  "De rondvaart is het hoofdpunt van de dag. We kiezen later een vertrek en route die bij het gezin passen. De middag houden we flexibel voor wateractiviteiten of rust; we plannen geen tweede grote excursie.",
+  "We reizen in de ochtend en rekenen extra tijd voor verkeer en parkeren in Montréal. Na het inchecken verkennen we de oude stad te voet; de auto kan tijdens het stadsverblijf blijven staan.",
+  "We beginnen met Mont Royal en kiezen daarna tussen fietsen langs het kanaal en extra tijd in de oude haven. We houden een deel van de middag vrij voor eigen interesses en zoeken samen een plek voor het avondeten.",
+  "Paspoorten en de voor deze reis benodigde documenten houden we onderweg bij de hand. De wachttijd aan de grens is onzeker. Daarom plannen we na aankomst alleen een korte dorpswandeling en een ontspannen avond.",
+  "We kiezen op basis van het weer één hoofdactiviteit in de bergen. Een gondelrit en een korte wandeling zijn een rustigere combinatie; mountainbiken is een alternatief. De middag biedt ruimte voor rust bij het hotel.",
+  "Vandaag krijgt de autorit voorrang. Met lunch, tanken en andere pauzes kan deze reisdag flink langer duren dan de zuivere rijtijd. We vermijden vaste avondafspraken en gaan na aankomst alleen nog eten.",
+  "We trekken vroeg het park in en combineren enkele korte wandelingen met uitzichtpunten. Cadillac Mountain is optioneel en afhankelijk van weer en de dan geldende reserveringsregels. Het parkprogramma mag ook korter als we meer tijd bij Jordan Pond willen.",
+  "We vertrekken op tijd en gebruiken Portland als langere pauze als het verkeer meezit. De avondwandeling in Boston is optioneel; na de rit hoeven we verder alleen in te checken en te eten.",
+  "We lopen de Freedom Trail in een rustig tempo, met stops voor lunch en drinken. Voor een eventuele wedstrijd of andere avondactiviteit wachten we eerst het programma voor 2027 af. Zonder wedstrijd blijft er meer tijd voor de haven.",
+  "Deze zaterdag kan de rit naar Cape Cod door vakantiedrukte langer worden. We vertrekken daarom vroeg en plannen geen activiteit met een vaste starttijd. Na aankomst is strand of zwembad voldoende.",
+  "We kiezen voor een ontspannen fiets- en stranddag. Een walvistocht vervangt een deel van dit programma en komt er niet bovenop: die vraagt extra reistijd en is afhankelijk van beschikbaarheid en weer.",
+  "De rit naar New York kan door verkeer en het inleveren van de auto extra tijd kosten. We regelen vooraf waar de auto teruggaat en hoe we vanaf daar bij het hotel komen. Times Square bekijken we alleen als daar na aankomst nog energie voor is.",
+  "We reserveren de ochtend voor de ferry-excursie en houden de middag voor Downtown. Het 9/11 Memorial is een buitenbezoek in dit voorstel; een museumbezoek is een aparte keuze waarvoor we extra tijd moeten vrijmaken.",
+  "We plannen Central Park in de ochtend en een ruime lunchpauze. Fifth Avenue is flexibel in te vullen. Voor een uitzichtpunt kiezen we later een tijdslot; bij slecht zicht kunnen we dat onderdeel zo mogelijk verschuiven.",
+  "We beginnen in Brooklyn en reizen daarna naar Chelsea voor de markt en de High Line. Een musical is een optionele afsluiter. We houden ook tijd over om bagage klaar te maken voor de terugreis.",
+  "Na het uitchecken hangt de resterende tijd af van de geboekte vlucht en de mogelijkheid om bagage te bewaren. We plannen een ruime luchthaventransfer en volgen de incheckadviezen van de luchtvaartmaatschappij. Deze nacht slapen we in het vliegtuig.",
+  "De aankomsttijd volgt uit de nog te boeken terugvlucht. We houden de rest van de dag vrij voor de reis naar huis en herstel van de nachtvlucht. De 20 hotelovernachtingen zijn hiermee volledig afgerond."
+];
